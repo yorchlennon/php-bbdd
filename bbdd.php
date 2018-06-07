@@ -34,7 +34,7 @@ if ($connection->query($sql1) === TRUE) {
 
 $sql2 = "Select * from MyGuests";
 if ($connection->query($sql2) === TRUE) {
-   $result=mysqli_query($connection,$sq2);
+   $result=mysqli_query($connection,$sql2);
    while($row = mysqli_fetch_array($result)) {
     $posts[] = $row['id'].$row['firstname'].$row['lastname'].$row['email'];
     print_r($posts);
