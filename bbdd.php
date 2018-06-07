@@ -25,7 +25,7 @@ if ($connection->query($sql) === TRUE) {
     echo "Error creating table: " . $connection->error;
 }
 
-$sql1 = "INSERT INTO MyGuest values ('Cloud', 'Strife','mail@mail.com')
+$sql1 = "INSERT INTO MyGuest values ('Cloud', 'Strife','mail@mail.com')";
 if ($connection->query($sql) === TRUE) {
    echo "User created successfully";
 } else {
