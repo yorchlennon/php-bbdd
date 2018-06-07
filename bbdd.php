@@ -1,4 +1,4 @@
 <?PHP
-$prueba = getenv("databaseuser")
+$prueba = getenv("databaseuser");
 echo $prueba;
 ?>
