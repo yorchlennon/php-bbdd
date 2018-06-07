@@ -25,23 +25,18 @@ if ($connection->query($sql) === TRUE) {
     echo "Error creating table: " . $connection->error;
 }
 
-$sql1 = "INSERT INTO MyGuests (firstname, lastname, email) values ('Squall', 'Lionheart','mail@mail.com')";
+/*$sql1 = "INSERT INTO MyGuests (firstname, lastname, email) values ('Squall', 'Lionheart','mail@mail.com')";
 if ($connection->query($sql1) === TRUE) {
-   echo "User created successfully";
+   echo "<br/>User created successfully";
 } else {
     echo "<br/>Error creating user: " . $connection->error;
-}
+}*/
 
 $sql2 = "Select * from MyGuests";
-if ($connection->query($sql2) === TRUE) {
-    $result=mysqli_query($connection,$sql2);
+  $result=mysqli_query($connection,$sql2);
     while($row = mysqli_fetch_array($result)) {
-    echo $row['id'].$row['firstname'].$row['lastname'].$row['email'];
-    
-}
-} else {
-    echo "<br/>Error: " . $connection->error;
-}
+        echo $row['id'].$row['firstname'].$row['lastname'].$row['email'];
+    }
     
 $connection->close();
 ?>
