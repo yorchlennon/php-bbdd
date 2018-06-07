@@ -32,7 +32,7 @@ if ($connection->query($sql1) === TRUE) {
     echo "<br/>Error creating user: " . $connection->error;
 }
 
-$sql2 = "Select * from MyGuests"
+$sql2 = "Select * from MyGuests";
 if ($connection->query($sql2) === TRUE) {
    $result=mysqli_query($connection,$sq2);
    while($row = mysqli_fetch_array($result)) {
