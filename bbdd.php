@@ -34,10 +34,10 @@ if ($connection->query($sql1) === TRUE) {
 
 $sql2 = "Select * from MyGuests";
 if ($connection->query($sql2) === TRUE) {
-   $result=mysqli_query($connection,$sql2);
-   while($row = mysqli_fetch_array($result)) {
-    $posts[] = $row['id'].$row['firstname'].$row['lastname'].$row['email'];
-    print_r($posts);
+    $result=mysqli_query($connection,$sql2);
+    while($row = mysqli_fetch_array($result)) {
+    echo $row['id'].$row['firstname'].$row['lastname'].$row['email'];
+    
 }
 } else {
     echo "<br/>Error: " . $connection->error;
