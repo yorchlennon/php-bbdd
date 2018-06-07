@@ -1,4 +1,4 @@
 <?php
-echo phpinfo();
+$prueba = getenv("databaseuser")
+echo $prueba;
 ?>
-ioahdlakd
