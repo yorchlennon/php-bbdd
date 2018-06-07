@@ -12,5 +12,7 @@ if ($connection->connect_errno) {
     printf("Connected to the database");
 }
 $connection->close();*/
-echo getenv("databaseuser");
+$prueba = getenv("databaseuser")
+echo $prueba;
+echo "segunda linea";
 ?>
