@@ -1,3 +1,4 @@
 <?php
-echo "segunda linea";
+echo phpinfo();
 ?>
+ioahdlakd
